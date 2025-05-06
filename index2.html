@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style_map.css" />
+</head>
+<body>
+  <h1>Nos magasins partenaires</h1>
+  <div class="map-module-container">
+    <!-- Formulaire de recherche -->
+    <div class="map-search-form">
+      <input type="text" id="map-postal-code" class="map-search-input" placeholder="Code postal" />
+      <input type="text" id="map-city" class="map-search-input" placeholder="Ville" />
+      <button type="button" id="map-search-button" class="map-search-button">Rechercher</button>
+    </div>
+    <div class="map-layout">
+      <!-- Liste des magasins -->
+      <div class="map-stores-section">
+        <ul id="map-store-list" class="map-store-list"></ul>
+      </div>
+      <!-- Carte -->
+      <div id="map-map" class="map-container"></div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app_map.js"></script>
+</body>
+</html>
